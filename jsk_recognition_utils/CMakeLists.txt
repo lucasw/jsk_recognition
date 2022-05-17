@@ -12,6 +12,7 @@ endif(CCACHE_FOUND)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  diagnostic_updater
   dynamic_reconfigure
   jsk_recognition_msgs
   pcl_ros
