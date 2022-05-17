@@ -113,9 +113,9 @@ namespace jsk_pcl_ros
       // Go over all the points and calculate the mean or smallest distance
       for (size_t cp = 0; cp < indices.size (); ++cp)
       {
-        if (!pcl_isfinite (cloud->points[indices[cp]].x) ||
-            !pcl_isfinite (cloud->points[indices[cp]].y) ||
-            !pcl_isfinite (cloud->points[indices[cp]].z))
+        if (!std::isfinite (cloud->points[indices[cp]].x) ||
+            !std::isfinite (cloud->points[indices[cp]].y) ||
+            !std::isfinite (cloud->points[indices[cp]].z))
         {
           distances[cp] = 0;
           continue;
