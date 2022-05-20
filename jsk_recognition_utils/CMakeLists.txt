@@ -14,6 +14,7 @@ endif(CCACHE_FOUND)
 find_package(catkin REQUIRED COMPONENTS
   diagnostic_updater
   dynamic_reconfigure
+  jsk_data
   jsk_recognition_msgs
   pcl_ros
   pcl_msgs
