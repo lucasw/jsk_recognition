@@ -54,7 +54,7 @@ generate_dynamic_reconfigure_options(
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES jsk_recognition_utils
- CATKIN_DEPENDS jsk_recognition_msgs pcl_ros visualization_msgs message_runtime
+ CATKIN_DEPENDS eigen_conversions jsk_recognition_msgs pcl_ros tf_conversions visualization_msgs message_runtime
 )
 
 # Cythonize pyx files
